@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ENCRIPTADOR</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="./img/icono.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pixelify+Sans:wght@400..700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class="contenido">
+    <header>
+        <div class="contenido__cabeza">
+            <img class="contenido__cabeza__logo" src="./img/Designer.png" alt="Alura Latam">
+            <h1 class="contenido__cabeza__titulo">ENCRIPTADOR DE TEXTO</h1>
+        </div>
+    </header>
+    <main class="contenido__pagina">
+        <div class="contenido__pagina__encriptacion">
+            <div class="contenido__pagina__encriptacion__elementos">
+                <div class="contenerdor__encriptador__imagen">
+                    <img class="contenido__encriptador__imagen" src="./img/encriptado.png" alt="">
+                </div>
+                <input class="contenido__encriptador__input" id="texto" type="text"
+                    placeholder="Ingrese texto a encriptar" oninput="validarInput()">
+            </div>
+            <div class="contenido__encriptado__botones">
+                <div class="contenido__encriptador__parrafo">
+                    <p> <img src="./img/exclamacion.png" alt="Logo" class="contenido__encriptador__parrafo__logo"> Solo letras minusculas y sin acentos</p>
+                </div>
+                <button class="boton__encriptador" onclick="encriptar()">Encriptador</button>
+                <button class="boton__desencriptador" onclick="desencriptar()">Desencriptador</button>
+            </div>
+        </div>
+        <div class="contenido__desencriptado">
+            <div class="contenido__pagina__desencriptacion__elementos">
+                <div class="contenerdor__desencriptador__imagen">
+                    <img class="contenido__desencriptador__imagen" src="./img/desencriptado.png" alt="">
+                </div>
+                <textarea readonly class="contenido__desencriptado_textatea" id="textoDesencriptado"
+                    placeholder="Resultado"></textarea>
+            </div>
+            <div class="contenido__desencriptador__boton">
+                <button class="boton_copiar" onclick="copiarTexto()">Copiar</button>
+            </div>
+        </div>
+
+    </main>
+    <script src="encriptador.js"></script>
+</body>
+
+</html>
