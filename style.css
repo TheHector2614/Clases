@@ -1,0 +1,323 @@
+*, *::after, *::before{
+    box-sizing: border-box;
+}
+
+
+:root{
+    --fonts: "Pixelify Sans", sans-serif;
+    --color-primario:#f8b42c ;
+    --color-secundario: #fcec7b;
+    --color-terceario: #140422;
+    --color-cuaternario: #7cb898;
+    --color-quinto: #bcb477;
+    --border-size: 50px;
+}
+html {
+    font-family: var(--fonts);
+    color: #fff;
+    overflow-x: hidden;
+}
+.contenido{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75)), url('./img/fondo.jpg'), no-repeat, center;
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+}
+
+.contenido__cabeza{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 2rem;
+    margin: 0;
+}
+.contenido__cabeza__logo{
+    height: 15vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.contenido__cabeza__titulo{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 50px;
+    color: white;
+    margin-left: 20px;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+
+.contenido__pagina{
+    display: flex;
+    align-content: center;
+    justify-content: space-around;
+    flex-direction: row;
+    min-width: 100%;
+    padding: 1rem;
+    flex-wrap: wrap;
+    height: calc(100vh - 200px);
+}
+
+.contenido__pagina__encriptacion{
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    flex-wrap: wrap;
+}
+
+.contenido__pagina__encriptacion__elementos{
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    overflow: auto;
+    position: relative;
+}
+
+.contenido__pagina__desencriptacion__elementos{
+    display: flex;
+    flex-direction: row;
+    overflow: auto;
+    justify-content: center;
+    top: 0;
+    position: relative;
+
+}
+
+.contenido__encriptador__imagen{
+    width: 40vw;
+    height: 57vh;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    position: relative;
+
+}
+
+.contenido__encriptador__input{
+    height: 40vh;
+    width: 35vw;
+    color: white;
+    margin: 0;
+    background-color: var(--color-terceario);
+    border: 40px solid black;
+    border-image: url("./img/marco2.png");
+    border-radius: 15px;
+    border-image-repeat: stretch;
+    border-image-width: var(--border-size);
+    border-image-slice: 300;
+    border-image-outset: 12.5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    font-family: var(--fonts);
+    font-weight: 400;
+    font-size: 18px;
+    text-align: center;
+    position: absolute;
+    top: 4rem;
+    left:auto;
+    bottom: auto;
+    right: auto;
+
+}
+
+.contenido__encriptador__parrafo{
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    text-transform:inherit;
+    right: auto;
+    bottom: 3rem;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+
+.contenido__encriptado__botones{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.boton__encriptador , .boton__desencriptador{
+    padding: 19px;
+    min-width: 150px;
+    font-family: var(--fonts);
+    margin: 0;
+    border-image: url("./img/marco1.png");
+    border-image-repeat: stretch;
+    border-image-width: var(--border-size);
+    border-image-slice: 220;
+    border-image-outset: 5 4 8 4;
+    background-color: var(--color-terceario);
+    color: var(--color-secundario);
+    transition: 0.5s ease;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+    
+
+.contenido__desencriptado{
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    flex-wrap: wrap;
+}
+
+
+.contenido__desencriptador__imagen{
+    width: 40vw;
+    height: 57vh;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    position: relative;
+
+}
+
+.contenido__desencriptado_textatea{
+    height: 40vh;
+    width: 35vw;
+    margin: 0;
+    color: white;
+    background-color: var(--color-terceario);
+    border: 40px solid black;
+    border-image: url("./img/marco2.png");
+    border-radius: 15px;
+    border-image-repeat: stretch;
+    border-image-width: var(--border-size);
+    border-image-slice: 300;
+    border-image-outset: 12.5px ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    font-family: var(--fonts);
+    font-weight: 400;
+    font-size: 18px;
+    text-align: center;
+    position: absolute;
+    top: 4rem;
+    left:auto;
+    bottom: auto;
+    right: auto;
+    resize: none;
+
+}
+
+.contenido__desencriptador__boton{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    flex-wrap: wrap;
+    margin-top: 4.2rem;
+}
+
+.boton_copiar{
+    padding: 19px;
+    min-width: 150px;
+    font-family: var(--fonts);
+    margin: 0;
+    border-image: url("./img/marco1.png");
+    border-image-repeat: stretch;
+    border-image-width: var(--border-size);
+    border-image-slice: 220;
+    border-image-outset: 5 4 8 4;
+    background-color: var(--color-terceario);
+    color: var(--color-secundario);
+    transition: 0.5s ease;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.boton__desencriptador:hover, .boton__encriptador:hover, .boton_copiar:hover{
+    background-color: azure;
+    color: #140422;
+}
+
+
+@media (max-width: 768.5px ) {
+    .contenido__pagina {
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        height: auto;
+        margin: auto;
+    }
+
+    .contenido__pagina__encriptacion,
+    .contenido__desencriptado {
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+    }
+
+    .contenido__encriptador__imagen, .contenido__desencriptador__imagen{
+        width: 100%;
+    }
+
+    .contenido__desencriptado_textatea, .contenido__encriptador__input{
+        width: 85%;
+    }
+
+}  
+
+@media (max-width: 480.5px ){
+    .contenido__pagina {
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        height: auto;
+        margin: auto;
+    }
+
+    .contenido__pagina__encriptacion,
+    .contenido__desencriptado {
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+    }
+
+    .contenido__encriptador__imagen, .contenido__desencriptador__imagen{
+        width: 100%;
+    }
+
+    .contenido__desencriptado_textatea, .contenido__encriptador__input{
+        width: 85%;
+}
+
+
+}
