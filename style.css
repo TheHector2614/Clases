@@ -1,5 +1,7 @@
 *, *::after, *::before{
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 
@@ -107,7 +109,7 @@ html {
 }
 
 .contenido__encriptador__input{
-    height: 40vh;
+    height: 40.5vh;
     width: 35vw;
     color: white;
     margin: 0;

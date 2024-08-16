@@ -22,5 +22,5 @@ function copiarTexto() {
 
 function validarInput() {
     let input = document.getElementById("texto");
-    input.value = input.value.toLocaleLowerCase().replace(/[^a-zñ\s]/g, '');
+    input.value = input.value.toLocaleLowerCase().replace(/[^a-zñ,.?¿!¡;:\s]/g, '');
 }
