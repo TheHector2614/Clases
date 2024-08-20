@@ -1,4 +1,3 @@
-
 function encriptar(){
     let frase = document.getElementById("texto").value.toLocaleLowerCase();
     let textoCifrado = frase.replace(/e/img, "enter").replace(/i/img, "imes").replace(/a/img, "ai").replace(/o/img, "ober").replace(/u/img, "ufat");
@@ -23,4 +22,18 @@ function copiarTexto() {
 function validarInput() {
     let input = document.getElementById("texto");
     input.value = input.value.toLocaleLowerCase().replace(/[^a-zñ,.?¿!¡;:\s]/g, '');
+}
+
+function limpiarCampos() {
+    document.getElementById("texto").value = ""; // Limpiar el campo de entrada del texto
+    document.getElementById("textoDesencriptado").value = ""; // Limpiar el área de texto desencriptado
+}
+function pegarTexto() {
+    navigator.clipboard.readText()
+        .then(texto => {
+            document.getElementById("texto").value = texto; // Pega el texto en el campo de entrada
+        })
+        .catch(err => {
+            console.error("Error al pegar texto: ", err); // Maneja cualquier error
+        });
 }

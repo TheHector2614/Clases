@@ -9,26 +9,26 @@
     <link rel="icon" href="./img/icono.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pixelify+Sans:wght@400..700&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pixelify+Sans:wght@400..700&display=swap"
         rel="stylesheet">
 </head>
 
 <body class="contenido">
     <header>
         <div class="contenido__cabeza">
-            <img class="contenido__cabeza__logo" src="./img/Designer.png" alt="Alura Latam">
+            <img class="contenido__cabeza__logo" src="./img/Designer.png" alt="Logo Alura Latam">
             <h1 class="contenido__cabeza__titulo">ENCRIPTADOR DE TEXTO</h1>
         </div>
     </header>
     <main class="contenido__pagina">
         <div class="contenido__pagina__encriptacion">
             <div class="contenido__pagina__encriptacion__elementos">
-                <div class="contenerdor__encriptador__imagen">
-                    <img class="contenido__encriptador__imagen" src="./img/encriptado.png" alt="">
+                <div style="width: 100%; height: 100%; position: relative;">
+                    <img class="contenido__encriptador__imagen" src="./img/encriptado.png" alt="Folder Encriptador">
+                    <input style="position: absolute;" class="contenido__encriptador__input" id="texto" type="text" placeholder="Ingrese texto a encriptar" oninput="validarInput()">
+                    <img class="contenerdor__encriptador__imagen__limpiar" src="./img/limpiar.png" title="Limpiar" alt="Limpiar" onclick="limpiarCampos()">
+                    <img class="contenerdor__encriptador__imagen__pegar" src="./img/pegar.png" alt="Pegar" onclick="pegarTexto()">
                 </div>
-                <input class="contenido__encriptador__input" id="texto" type="text"
-                    placeholder="Ingrese texto a encriptar" oninput="validarInput()">
             </div>
             <div class="contenido__encriptado__botones">
                 <div class="contenido__encriptador__parrafo">
@@ -41,7 +41,7 @@
         <div class="contenido__desencriptado">
             <div class="contenido__pagina__desencriptacion__elementos">
                 <div class="contenerdor__desencriptador__imagen">
-                    <img class="contenido__desencriptador__imagen" src="./img/desencriptado.png" alt="">
+                    <img class="contenido__desencriptador__imagen" src="./img/desencriptado.png" alt="Folder Desencriptador">
                 </div>
                 <textarea readonly class="contenido__desencriptado_textatea" id="textoDesencriptado"
                     placeholder="Resultado"></textarea>
@@ -52,6 +52,22 @@
         </div>
 
     </main>
+    <footer>
+        <a href="https://www.linkedin.com/in/hector-suarez-001415242/" target="_blank" rel="noopener noreferrer" title="Linkedin">
+            <img href="" class="contenido__pie__pagina__logos" src="/img/LinkedinPixel.png" alt="Linkedin">
+        </a>
+        <a href="https://github.com/TheHector2614/encriptador-de-texto-alura/tree/prueba" target="_blank" rel="noopener noreferrer" title="GitHub">
+            <img href="" class="contenido__pie__pagina__logos" src="/img/GitHubPixel.png" alt="GitHub">
+        </a>
+        Hector Suarez 
+        <a href="https://www.aluracursos.com" target="_blank" rel="noopener noreferrer" title="Alura Latam">
+            <img href="" class="contenido__pie__pagina__logos" src="/img/AluraPixel.png" alt="Alura Latam">
+        </a>
+        <a href="https://www.oracle.com/co/education/oracle-next-education/" target="_blank" rel="noopener noreferrer" title="One Oracle Next Education">
+            <img href="" class="contenido__pie__pagina__logos" src="/img/OnePixel.png" alt="One Oracle Next Education">
+        </a>
+        </footer>
+
     <script src="encriptador.js"></script>
 </body>
 
