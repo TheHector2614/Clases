@@ -310,7 +310,7 @@ footer{
 }
 
 
-@media (max-width: 768.5px ) {
+@media (max-width: 768.5px) {
     .contenido__pagina {
         flex-direction: column;
         justify-content: center;
